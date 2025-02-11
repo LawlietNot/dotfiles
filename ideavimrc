@@ -1,5 +1,6 @@
 " Causes problems with some mappings
 "source ~/.vim/vimrc
+let mapleader = " "
 
 " 自定义
 " Move to the end of line
@@ -8,9 +9,11 @@ vnoremap L $
 " Move to the head of line
 nnoremap H ^
 vnoremap H ^
+nnoremap ga :action GotoAction<CR>
+
 
 " 使用系统剪贴板
-set clipboard^=ideaput
+set clipboard^=unnamedplus,unnamed
 
 
 """ copy https://github.com/citizenmatt/dotfiles/blob/master/ideavimrc
